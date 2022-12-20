@@ -2,6 +2,8 @@
 $color-gray-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+$color-red: #c23616;
+$color-gray: #eee;
 
 //Variables-fonts//
 $default-font-size: 16px;
@@ -45,31 +47,63 @@ a:visited {
 img {
   vertical-align: top;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem;
+.intro {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/machine\ 1.jpg);
+  background-size: cover;
+  background-position: center center;
   & a {
     cursor: pointer;
   }
-  .fa-hurricane {
-    font-size: 3rem;
-    color: $color-black;
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    color: $color-red;
+    font-weight: 800;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
   }
 }
 
 .nav__links li {
   display: inline-block;
   padding: 1.2rem;
+
   & a {
     text-decoration: none;
-    color: $color-black;
+    color: $color-white;
     padding: 2rem;
     transition: all 0.3s ease 0s;
 
     &:hover {
-      color: $color-gray-dark;
+      color: $color-red;
+    }
+  }
+}
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 75vh;
+  .introduction-inner {
+    & h1 {
+      font-size: 2.4rem;
+      font-style: oblique;
+      font-weight: 300;
+      color: $color-gray;
+    }
+    & h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $color-gray;
     }
   }
 }
