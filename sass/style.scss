@@ -17,8 +17,59 @@ $default-font-size: 16px;
 html {
   font-size: 62.5%;
 }
+
+body {
+  margin: 0;
+  text-align: center;
+  background: $color-white;
+  color: $color-black;
+  line-height: 1.7;
+  font-size: $default-font-size;
+}
+ul,
+li {
+  list-style-type: none;
+  font-size: $default-font-size;
+}
 .container {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  & a {
+    cursor: pointer;
+  }
+  .fa-hurricane {
+    font-size: 3rem;
+    color: $color-black;
+  }
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 1.2rem;
+  & a {
+    text-decoration: none;
+    color: $color-black;
+    padding: 2rem;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: $color-gray-dark;
+    }
+  }
 }
