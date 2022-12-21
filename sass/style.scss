@@ -192,3 +192,28 @@ section {
     }
   }
 }
+/*footer*/
+.footer {
+  display: flex;
+  min-height: 10rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  & p {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  & li {
+    display: inline;
+    padding-right: 2rem;
+    & i {
+      color: $color-black;
+      &:hover {
+        color: $color-red;
+      }
+    }
+  }
+}
