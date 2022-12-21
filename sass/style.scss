@@ -9,6 +9,16 @@ $color-gray: #eee;
 $default-font-size: 16px;
 $font-style-subtitle: oblique;
 
+//Templates//
+
+%flex_position {
+  display: flex;
+  align-items: center;
+}
+%flex_items {
+  text-align: center;
+  align-items: center;
+}
 //Global//
 *,
 *::after,
@@ -23,7 +33,7 @@ html {
 
 body {
   margin: 0;
-  text-align: center;
+  @extend%flex_items;
   background: $color-white;
   color: $color-black;
   line-height: 1.7;
@@ -66,8 +76,7 @@ section {
     cursor: pointer;
   }
   .navigation {
-    display: flex;
-    align-items: center;
+    @extend%flex_position;
     justify-content: space-between;
   }
   .logo {
@@ -95,8 +104,7 @@ section {
   }
 }
 .introduction {
-  display: flex;
-  align-items: center;
+  @extend%flex_position;
   justify-content: center;
   text-align: center;
   height: 75vh;
@@ -121,8 +129,7 @@ section {
   display: flex;
 
   .container {
-    text-align: center;
-    align-items: center;
+    @extend%flex_items;
     justify-content: center;
 
     .title {
@@ -174,8 +181,7 @@ section {
     object-fit: cover;
   }
   .container {
-    text-align: center;
-    align-items: center;
+    @extend%flex_items;
     justify-content: center;
 
     .title {
@@ -194,11 +200,10 @@ section {
 }
 /*footer*/
 .footer {
-  display: flex;
+  @extend%flex_position;
   min-height: 10rem;
   width: 100%;
   justify-content: space-around;
-  align-items: center;
   text-align: center;
 
   & p {
