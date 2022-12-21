@@ -125,12 +125,12 @@ section {
     align-items: center;
     justify-content: center;
 
-    .services-title {
+    .title {
       & h2 {
         font-size: 4rem;
       }
     }
-    .services-subtitle {
+    .subtitle {
       & h3 {
         font-size: 2rem;
         font-style: $font-style-subtitle;
@@ -161,5 +161,34 @@ section {
 @media (max-width: 770px) {
   .inner-services-container {
     flex-wrap: wrap;
+  }
+}
+
+/*Portfoio*/
+
+.portfolio {
+  display: flex;
+  background: $color-gray;
+  img {
+    height: 15rem;
+    object-fit: cover;
+  }
+  .container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      & h2 {
+        font-size: 4rem;
+      }
+    }
+    .subtitle {
+      & h3 {
+        font-size: 2rem;
+        font-style: $font-style-subtitle;
+        font-weight: 200;
+      }
+    }
   }
 }
