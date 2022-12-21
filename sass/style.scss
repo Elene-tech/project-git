@@ -7,6 +7,7 @@ $color-gray: #eee;
 
 //Variables-fonts//
 $default-font-size: 16px;
+$font-style-subtitle: oblique;
 
 //Global//
 *,
@@ -47,6 +48,13 @@ a:visited {
 img {
   vertical-align: top;
 }
+
+section {
+  padding: 9rem 0;
+}
+
+/*Navigation and Introduction*/
+
 .intro {
   height: 100vh;
   width: 100%;
@@ -95,7 +103,7 @@ img {
   .introduction-inner {
     & h1 {
       font-size: 2.4rem;
-      font-style: oblique;
+      font-style: $font-style-subtitle;
       font-weight: 300;
       color: $color-gray;
     }
@@ -105,5 +113,53 @@ img {
       font-weight: 600;
       color: $color-gray;
     }
+  }
+}
+/*section services*/
+
+.services {
+  display: flex;
+
+  .container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    .services-title {
+      & h2 {
+        font-size: 4rem;
+      }
+    }
+    .services-subtitle {
+      & h3 {
+        font-size: 2rem;
+        font-style: $font-style-subtitle;
+        font-weight: 200;
+      }
+    }
+    .inner-services-container {
+      display: flex;
+      margin-top: 5rem;
+    }
+    .box {
+      margin: 0 2rem;
+      & i {
+        color: $color-red;
+        font-size: 4rem;
+        padding-bottom: 2rem;
+      }
+      & h4 {
+        font-weight: 600;
+      }
+
+      & p {
+        color: $color-gray-dark;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .inner-services-container {
+    flex-wrap: wrap;
   }
 }
