@@ -206,7 +206,11 @@ section {
   width: 100%;
   justify-content: space-around;
   text-align: center;
-
+    .behance,
+    .fb,
+    .insta {
+     color:$color-white;
+    }
   p {
     font-size: 1rem;
     padding-left: 1.5rem;
@@ -215,6 +219,7 @@ section {
   li {
     display: inline;
     padding-right: 2rem;
+    
     & i {
       color: $color-black;
       &:hover {
