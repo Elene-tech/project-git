@@ -30,7 +30,8 @@
     "onchange": "^7.1.0",
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
-    "sass": "^1.57.0"
+    "sass": "^1.57.0",
+    "html-validate": "^7.10.1"
   },
   "dependencies": {
     "html-validate": "^7.10.1"
