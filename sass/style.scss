@@ -147,6 +147,8 @@ section {
     .inner-services-container {
       display: flex;
       margin-top: 5rem;
+      @media (max-width: 770px) {
+      flex-wrap: wrap;
     }
     .box {
       margin: 0 2rem;
@@ -164,10 +166,7 @@ section {
       }
     }
   }
-  @media (max-width: 770px) {
-  .inner-services-container {
-    flex-wrap: wrap;
-  }
+  
 }
 }
 
